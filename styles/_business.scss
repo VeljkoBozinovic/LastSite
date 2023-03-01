@@ -9,9 +9,17 @@
     }
 
     &__cards {
-      margin: 15px;
+      margin: 30px 15px 0;
 
       &__item {
+        padding: 20px 0;
+
+        p {
+          margin: 10px 0;
+          font-size: 20px;
+          line-height: 35px;
+        }
+
         img {
           width: 120px;
         }
@@ -19,6 +27,39 @@
         &__text {
           h2 {
             color: $businessTextColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .business {
+    &__wrapper {
+      width: 70%;
+      margin: auto;
+
+      h1 {
+        font-size: 50px;
+      }
+
+      &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 480px);
+        justify-content: center;
+
+        &__item {
+          display: flex;
+
+          &__image {
+            margin-right: 20px;
+          }
+
+          &__text {
+            p {
+              font-size: 18px;
+            }
           }
         }
       }

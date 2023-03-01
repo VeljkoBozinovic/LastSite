@@ -19,6 +19,7 @@
 .menu {
   position: fixed;
   inset: 0;
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0.2);
 }
 .menu__wrapper {
@@ -150,7 +151,15 @@
   color: #702bb1;
 }
 .business__wrapper__cards {
-  margin: 15px;
+  margin: 30px 15px 0;
+}
+.business__wrapper__cards__item {
+  padding: 20px 0;
+}
+.business__wrapper__cards__item p {
+  margin: 10px 0;
+  font-size: 20px;
+  line-height: 35px;
 }
 .business__wrapper__cards__item img {
   width: 120px;
@@ -159,6 +168,29 @@
   color: #702bb1;
 }
 
+@media screen and (min-width: 768px) {
+  .business__wrapper {
+    width: 70%;
+    margin: auto;
+  }
+  .business__wrapper h1 {
+    font-size: 50px;
+  }
+  .business__wrapper__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 480px);
+    justify-content: center;
+  }
+  .business__wrapper__cards__item {
+    display: flex;
+  }
+  .business__wrapper__cards__item__image {
+    margin-right: 20px;
+  }
+  .business__wrapper__cards__item__text p {
+    font-size: 18px;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
