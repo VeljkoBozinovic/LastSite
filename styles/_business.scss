@@ -1,0 +1,27 @@
+.business {
+  &__wrapper {
+    h1 {
+      width: 60%;
+      margin: 20px auto auto auto;
+      font-size: 30px;
+      text-align: center;
+      color: $businessTextColor;
+    }
+
+    &__cards {
+      margin: 15px;
+
+      &__item {
+        img {
+          width: 120px;
+        }
+
+        &__text {
+          h2 {
+            color: $businessTextColor;
+          }
+        }
+      }
+    }
+  }
+}
