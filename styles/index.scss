@@ -1,0 +1,13 @@
+@import "config.scss";
+@import "header.scss";
+@import "home.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  display: none;
+}

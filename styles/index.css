@@ -1,0 +1,119 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.nav__menu__hamburger {
+  cursor: pointer;
+}
+.nav__menu__hamburger__line {
+  height: 4px;
+  width: 30px;
+  margin: 5px 0;
+  background-color: #000;
+}
+.nav__menu__hamburger:hover .nav__menu__hamburger__line {
+  background-color: #f70;
+}
+
+.menu {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.menu__wrapper {
+  width: 250px;
+  height: 100%;
+  padding: 15px;
+  background-color: #000;
+}
+.menu__wrapper__close {
+  margin: 5px;
+}
+.menu__wrapper__close img {
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+}
+.menu__wrapper__list {
+  color: #fff;
+}
+.menu__wrapper__list ul {
+  list-style-type: none;
+  font-size: 23px;
+  text-align: center;
+}
+.menu__wrapper__list ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+.menu__wrapper__list ul li:hover {
+  color: #bbb;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    width: 60%;
+    margin: auto;
+  }
+}
+.home {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  position: relative;
+}
+.home__images__first-two {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.home__images__first-two img {
+  width: 150px;
+}
+.home__images__second-two {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.home__images__second-two img {
+  width: 150px;
+}
+.home__container {
+  color: #fff;
+}
+.home__container h1 {
+  width: 80%;
+  margin: auto;
+  font-size: 35px;
+  text-align: center;
+}
+.home__container__layout {
+  margin: 10px;
+  padding: 15px 30px;
+  border-radius: 100px;
+  background: linear-gradient(#b47aec, #702bb1);
+}
+.home__container__layout ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+.home__container__layout ul li {
+  font-size: 25px;
+  padding: 0 5px;
+  border-right: 1px solid #fff;
+}
+.home__container__layout ul li:last-child {
+  border: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  display: none;
+}/*# sourceMappingURL=index.css.map */

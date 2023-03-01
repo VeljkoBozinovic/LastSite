@@ -1,0 +1,62 @@
+.home {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  position: relative;
+
+  &__images {
+    &__first-two {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+
+      img {
+        width: 150px;
+      }
+    }
+
+    &__second-two {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+
+      img {
+        width: 150px;
+      }
+    }
+  }
+
+  &__container {
+    color: $homeContainerTextColor;
+
+    h1 {
+      width: 80%;
+      margin: auto;
+      font-size: 35px;
+      text-align: center;
+    }
+
+    &__layout {
+      margin: 10px;
+      padding: 15px 30px;
+      border-radius: 100px;
+      background: $homeContainerBgColor;
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style-type: none;
+
+        li {
+          font-size: 25px;
+          padding: 0 5px;
+          border-right: $homeContainerLiItemsBorder;
+
+          &:last-child {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

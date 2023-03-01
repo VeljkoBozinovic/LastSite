@@ -6,6 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Site</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <script src="scripts/app.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav__logo">
+          <img src="images/default-logo.png" alt="logo" />
+        </div>
+        <div class="nav__menu">
+          <div class="nav__menu__hamburger">
+            <div class="nav__menu__hamburger__line"></div>
+            <div class="nav__menu__hamburger__line"></div>
+            <div class="nav__menu__hamburger__line"></div>
+          </div>
+        </div>
+      </nav>
+      <div class="menu hide">
+        <div class="menu__wrapper">
+          <div class="menu__wrapper__close">
+            <img src="images/close.png" alt="close" />
+          </div>
+          <div class="menu__wrapper__list">
+            <ul>
+              <li>Home</li>
+              <li>Page 3</li>
+              <li>Page 4</li>
+              <li>Page 5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="home">
+        <div class="home__images__first-two">
+          <div>
+            <img src="images/wave.png" alt="wave" />
+          </div>
+          <div class="img-ball">
+            <img src="images/ball.png" alt="ball" />
+          </div>
+        </div>
+        <div class="home__container">
+          <h1>Meet our design team</h1>
+          <div class="home__container__layout">
+            <ul>
+              <li>about us</li>
+              <li>news</li>
+              <li>reviews</li>
+              <li>articles</li>
+              <li>#future</li>
+            </ul>
+          </div>
+        </div>
+        <div class="home__images__second-two">
+          <img class="img-circle-half" src="images/u.png" alt="half-circle" />
+          <img class="img-circle" src="images/o.png" alt="circle" />
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
