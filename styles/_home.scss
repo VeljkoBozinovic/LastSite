@@ -20,7 +20,15 @@
       padding: 40px;
 
       img {
+        position: relative;
+        left: 45px;
         width: 150px;
+        z-index: 1;
+
+        &:last-child {
+          z-index: 0;
+          left: -45px;
+        }
       }
     }
   }
@@ -49,7 +57,7 @@
 
         li {
           font-size: 25px;
-          padding: 0 5px;
+          padding: 5px;
           border-right: $homeContainerLiItemsBorder;
 
           &:last-child {
@@ -57,6 +65,38 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    height: fit-content;
+
+    &__wrapper {
+      width: 70%;
+      margin: auto;
+    }
+
+    &__container {
+      position: relative;
+      top: -200px;
+
+      h1 {
+        width: 50%;
+        font-size: 100px;
+        text-shadow: $homeContainerTextShadow;
+      }
+
+      &__layout {
+        width: 600px;
+        margin: auto;
+      }
+    }
+
+    &__images__second-two {
+      position: relative;
+      top: -200px;
     }
   }
 }
