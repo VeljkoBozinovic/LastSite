@@ -1,10 +1,12 @@
-@import "config.scss";
-@import "header.scss";
-@import "home.scss";
-@import "business.scss";
-@import "woman.scss";
-@import "digital.scss";
-@import "whatWeDo.scss";
+@import "config";
+@import "header";
+@import "home";
+@import "business";
+@import "woman";
+@import "digital";
+@import "whatWeDo";
+@import "team";
+@import "form";
 
 * {
   box-sizing: border-box;
