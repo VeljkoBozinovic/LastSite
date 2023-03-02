@@ -1,0 +1,125 @@
+.form {
+  &__wrapper {
+    padding: 20px 10px;
+    height: 1150px;
+
+    &__wheel {
+      position: absolute;
+      display: block;
+      margin-left: auto;
+      width: 170px;
+    }
+
+    &__pipe {
+      position: absolute;
+      top: -380px;
+      width: 200px;
+      rotate: 30deg;
+    }
+
+    &__pottle {
+      width: 100%;
+    }
+
+    form {
+      position: absolute;
+      top: -420px;
+      background-color: $formBgColor;
+
+      .group {
+        padding: 10px 30px;
+
+        label {
+          display: block;
+        }
+
+        input:not([value]) {
+          @include formElementBoxModel;
+          height: 50px;
+        }
+
+        input[type="submit"] {
+          width: 100%;
+          padding: 15px;
+          border-radius: 15px;
+          font-size: 18px;
+          color: $formSubmitColor;
+          background-color: $formSubmitBgColor;
+        }
+
+        textarea {
+          @include formElementBoxModel;
+          height: 100px;
+        }
+      }
+
+      .group-checkbox {
+        padding: 10px 30px;
+      }
+    }
+
+    &__wave {
+      position: absolute;
+      top: -370px;
+      display: block;
+      width: 140px;
+    }
+
+    &__ball {
+      position: absolute;
+      top: -450px;
+      margin-left: auto;
+      display: block;
+      width: 170px;
+    }
+
+    &__pipe2 {
+      position: absolute;
+      top: -450px;
+      left: 50px;
+      width: 160px;
+      rotate: 220deg;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    &__wrapper {
+      @include no-sides;
+
+      &__pottle {
+        display: block;
+        margin: auto;
+        max-width: 800px;
+      }
+
+      &__pipe {
+        top: -770px;
+        width: 400px;
+      }
+
+      form {
+        top: -850px;
+        max-width: 500px;
+        border-radius: 10px;
+      }
+
+      &__ball {
+        top: -1100px;
+        left: -150px;
+        width: 340px;
+      }
+
+      &__wave {
+        top: -800px;
+        width: 300px;
+      }
+
+      &__pipe2 {
+        top: -1700px;
+        left: 800px;
+      }
+    }
+  }
+}

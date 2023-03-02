@@ -36,3 +36,18 @@ $whatWeDoSecondBgColor: #fff6ef;
 
 $teamContainerBgColor: #fff;
 $teamContainerTitleColor: #702bb1;
+
+@mixin formElementBoxModel {
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid #fbc6d9;
+  background-color: #fff9fb;
+}
+$formBgColor: #fff;
+$formSubmitColor: #fff;
+$formSubmitBgColor: #702bb1;
+
+$footerBgColor: #333;
+$footerTextColor: #fff;
+$footerLinkColor: #d3b1f4;

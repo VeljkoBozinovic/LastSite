@@ -547,6 +547,129 @@
     font-size: 50px;
   }
 }
+.form__wrapper {
+  padding: 20px 10px;
+  height: 1150px;
+}
+.form__wrapper__wheel {
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  width: 170px;
+}
+.form__wrapper__pipe {
+  position: absolute;
+  top: -380px;
+  width: 200px;
+  rotate: 30deg;
+}
+.form__wrapper__pottle {
+  width: 100%;
+}
+.form__wrapper form {
+  position: absolute;
+  top: -420px;
+  background-color: #fff;
+}
+.form__wrapper form .group {
+  padding: 10px 30px;
+}
+.form__wrapper form .group label {
+  display: block;
+}
+.form__wrapper form .group input:not([value]) {
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid #fbc6d9;
+  background-color: #fff9fb;
+  height: 50px;
+}
+.form__wrapper form .group input[type=submit] {
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #702bb1;
+}
+.form__wrapper form .group textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid #fbc6d9;
+  background-color: #fff9fb;
+  height: 100px;
+}
+.form__wrapper form .group-checkbox {
+  padding: 10px 30px;
+}
+.form__wrapper__wave {
+  position: absolute;
+  top: -370px;
+  display: block;
+  width: 140px;
+}
+.form__wrapper__ball {
+  position: absolute;
+  top: -450px;
+  margin-left: auto;
+  display: block;
+  width: 170px;
+}
+.form__wrapper__pipe2 {
+  position: absolute;
+  top: -450px;
+  left: 50px;
+  width: 160px;
+  rotate: 220deg;
+}
+
+@media screen and (min-width: 768px) {
+  .form__wrapper {
+    width: 70%;
+    margin: auto;
+  }
+  .form__wrapper__pottle {
+    display: block;
+    margin: auto;
+    max-width: 800px;
+  }
+  .form__wrapper__pipe {
+    top: -770px;
+    width: 400px;
+  }
+  .form__wrapper form {
+    top: -850px;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  .form__wrapper__ball {
+    top: -1100px;
+    left: -150px;
+    width: 340px;
+  }
+  .form__wrapper__wave {
+    top: -800px;
+    width: 300px;
+  }
+  .form__wrapper__pipe2 {
+    top: -1700px;
+    left: 800px;
+  }
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+}
+footer p {
+  padding: 55px 30px;
+}
+footer a {
+  color: #d3b1f4;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
