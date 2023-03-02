@@ -1,0 +1,112 @@
+.whatWeDo {
+  background-color: $whatWeDoSecondBgColor;
+
+  &__first-bg {
+    background-image: $whatWeDoFirstBgColor;
+    height: 400px;
+  }
+
+  &__wrapper {
+    padding: 20px;
+    height: 700px;
+
+    > img {
+      @include flow-to-top-secton;
+      display: block;
+      margin-left: auto;
+      margin-bottom: 50px;
+      width: 150px;
+    }
+
+    &__card {
+      @include flow-to-top-secton;
+      padding: 50px;
+      background-color: $digitalCardBgColor;
+      border-radius: 20px;
+
+      img {
+        position: relative;
+        top: -50px;
+        rotate: 30deg;
+        width: 200px;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+        font-size: 27px;
+        color: $digitalCardTitleAndButtonColor;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      &__more {
+        width: fit-content;
+        margin: 30px 0 50px 0;
+        padding: 20px 30px;
+        background-color: $digitalCardTitleAndButtonColor;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: $digitalCardButtonText;
+      }
+    }
+
+    &__images {
+      @include flow-to-top-secton;
+      margin: 10px 0;
+
+      img {
+        display: block;
+        width: 150px;
+
+        &:last-child {
+          margin-left: auto;
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .whatWeDo {
+    &__wrapper {
+      @include no-sides;
+
+      > img {
+        margin: 190px 0 0 0;
+        width: 300px;
+      }
+
+      &__card {
+        top: -750px;
+        max-width: 600px;
+        margin-left: auto;
+
+        img {
+          top: -90px;
+        }
+
+        h1 {
+          font-size: 50px;
+        }
+      }
+
+      &__images {
+        top: -750px;
+
+        img {
+          width: 200px;
+
+          &:last-child {
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+}

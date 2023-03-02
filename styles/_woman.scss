@@ -67,8 +67,7 @@
 @media screen and (min-width: 768px) {
   .woman {
     &__wrapper {
-      width: 70%;
-      margin: auto;
+      @include no-sides;
 
       &__container {
         display: flex;

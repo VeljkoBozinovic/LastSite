@@ -94,8 +94,7 @@
   .digital {
     &__wrapper {
       position: relative;
-      width: 70%;
-      margin: auto;
+      @include no-sides;
 
       &__wave {
         right: 0;
