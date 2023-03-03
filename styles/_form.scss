@@ -1,29 +1,38 @@
 .form {
   &__wrapper {
+    position: relative;
     padding: 20px 10px;
     height: 1150px;
 
     &__wheel {
       position: absolute;
+      top: 30px;
+      right: 10px;
       display: block;
-      margin-left: auto;
       width: 170px;
     }
 
     &__pipe {
       position: absolute;
-      top: -380px;
+      top: 170px;
+      left: 0;
       width: 200px;
       rotate: 30deg;
     }
 
     &__pottle {
+      position: absolute;
+      top: 220px;
+      rotate: 90deg;
       width: 100%;
     }
 
     form {
       position: absolute;
-      top: -420px;
+      top: 300px;
+      width: 95%;
+      height: 430px;
+      margin: auto;
       background-color: $formBgColor;
 
       .group {
@@ -60,24 +69,22 @@
 
     &__wave {
       position: absolute;
-      top: -370px;
-      display: block;
+      bottom: 280px;
       width: 140px;
     }
 
     &__ball {
       position: absolute;
-      top: -450px;
-      margin-left: auto;
-      display: block;
+      right: 10px;
+      bottom: 200px;
       width: 170px;
     }
 
     &__pipe2 {
       position: absolute;
-      top: -450px;
-      left: 50px;
-      width: 160px;
+      bottom: 40px;
+      left: 25%;
+      width: 200px;
       rotate: 220deg;
     }
   }
@@ -88,37 +95,43 @@
     &__wrapper {
       @include no-sides;
 
+      &__wheel {
+        top: 150px;
+        width: 250px;
+      }
+
       &__pottle {
-        display: block;
-        margin: auto;
-        max-width: 800px;
+        z-index: -2;
       }
 
       &__pipe {
-        top: -770px;
-        width: 400px;
+        top: 10%;
+        width: 320px;
       }
 
       form {
-        top: -850px;
-        max-width: 500px;
+        max-width: 600px;
+        height: auto;
+        padding: 20px;
         border-radius: 10px;
       }
 
       &__ball {
-        top: -1100px;
-        left: -150px;
+        z-index: -1;
+        right: 25%;
         width: 340px;
       }
 
       &__wave {
-        top: -800px;
+        bottom: 180px;
         width: 300px;
       }
 
       &__pipe2 {
-        top: -1700px;
-        left: 800px;
+        bottom: 35%;
+        left: 75%;
+        width: 220px;
+        z-index: -1;
       }
     }
   }

@@ -548,27 +548,36 @@
   }
 }
 .form__wrapper {
+  position: relative;
   padding: 20px 10px;
   height: 1150px;
 }
 .form__wrapper__wheel {
   position: absolute;
+  top: 30px;
+  right: 10px;
   display: block;
-  margin-left: auto;
   width: 170px;
 }
 .form__wrapper__pipe {
   position: absolute;
-  top: -380px;
+  top: 170px;
+  left: 0;
   width: 200px;
   rotate: 30deg;
 }
 .form__wrapper__pottle {
+  position: absolute;
+  top: 220px;
+  rotate: 90deg;
   width: 100%;
 }
 .form__wrapper form {
   position: absolute;
-  top: -420px;
+  top: 300px;
+  width: 95%;
+  height: 430px;
+  margin: auto;
   background-color: #fff;
 }
 .form__wrapper form .group {
@@ -606,22 +615,20 @@
 }
 .form__wrapper__wave {
   position: absolute;
-  top: -370px;
-  display: block;
+  bottom: 280px;
   width: 140px;
 }
 .form__wrapper__ball {
   position: absolute;
-  top: -450px;
-  margin-left: auto;
-  display: block;
+  right: 10px;
+  bottom: 200px;
   width: 170px;
 }
 .form__wrapper__pipe2 {
   position: absolute;
-  top: -450px;
-  left: 50px;
-  width: 160px;
+  bottom: 40px;
+  left: 25%;
+  width: 200px;
   rotate: 220deg;
 }
 
@@ -630,38 +637,44 @@
     width: 70%;
     margin: auto;
   }
+  .form__wrapper__wheel {
+    top: 150px;
+    width: 250px;
+  }
   .form__wrapper__pottle {
-    display: block;
-    margin: auto;
-    max-width: 800px;
+    z-index: -2;
   }
   .form__wrapper__pipe {
-    top: -770px;
-    width: 400px;
+    top: 10%;
+    width: 320px;
   }
   .form__wrapper form {
-    top: -850px;
-    max-width: 500px;
+    max-width: 600px;
+    height: auto;
+    padding: 20px;
     border-radius: 10px;
   }
   .form__wrapper__ball {
-    top: -1100px;
-    left: -150px;
+    z-index: -1;
+    right: 25%;
     width: 340px;
   }
   .form__wrapper__wave {
-    top: -800px;
+    bottom: 180px;
     width: 300px;
   }
   .form__wrapper__pipe2 {
-    top: -1700px;
-    left: 800px;
+    bottom: 35%;
+    left: 75%;
+    width: 220px;
+    z-index: -1;
   }
 }
 footer {
   background-color: #333;
   color: #fff;
   font-size: 20px;
+  text-align: center;
 }
 footer p {
   padding: 55px 30px;
