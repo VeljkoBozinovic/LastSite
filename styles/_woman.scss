@@ -109,6 +109,11 @@
         top: -30px;
         display: flex;
         gap: 20px;
+        height: 360px;
+
+        &__item {
+          height: 320px;
+        }
       }
     }
   }

@@ -12,6 +12,16 @@
       img {
         width: 150px;
       }
+
+      & div:first-child {
+        animation: home-wave-from-left 1s;
+      }
+
+      & div:last-child {
+        img {
+          animation: home-ball-from-right 1s;
+        }
+      }
     }
 
     &__second-two {
@@ -25,9 +35,13 @@
         width: 150px;
         z-index: 1;
 
+        &:first-child {
+          animation: home-pipe-from-left 1s;
+        }
+
         &:last-child {
-          z-index: 0;
           left: -45px;
+          animation: home-wheel-from-right 1s;
         }
       }
     }
@@ -35,6 +49,7 @@
 
   &__container {
     color: $homeContainerTextColor;
+    animation: home-container-scale 1s;
 
     h1 {
       width: 80%;

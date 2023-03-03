@@ -1,3 +1,287 @@
+@keyframes home-wave-from-left {
+  from {
+    scale: 0.4;
+    margin-left: -200px;
+  }
+}
+@keyframes home-ball-from-right {
+  from {
+    opacity: 0;
+    scale: 0;
+    rotate: 180deg;
+  }
+}
+@keyframes home-pipe-from-left {
+  from {
+    margin-left: -200px;
+  }
+}
+@keyframes home-wheel-from-right {
+  from {
+    margin-right: -200px;
+  }
+}
+@keyframes home-container-scale {
+  from {
+    scale: 0;
+  }
+}
+@keyframes business-title-scale {
+  from {
+    scale: 1.5;
+    opacity: 0;
+  }
+}
+.animate-business-title {
+  animation: business-title-scale 1s;
+}
+
+@keyframes business-images-from-left {
+  from {
+    margin-left: -300px;
+  }
+}
+.animate-business-images {
+  animation: business-images-from-left 1s;
+}
+
+@keyframes business-text-from-right {
+  from {
+    margin-left: 600px;
+  }
+}
+.animate-business-texts {
+  animation: business-text-from-right 1s;
+}
+
+@keyframes woman-circles-from-right {
+  from {
+    margin-right: -300px;
+  }
+}
+.animate-woman-circles {
+  animation: woman-circles-from-right 1s;
+}
+
+@keyframes woman-bg-from-left {
+  from {
+    margin-left: -1000px;
+    opacity: 0;
+  }
+}
+.animate-woman-bg {
+  animation: woman-bg-from-left 1s;
+}
+
+@keyframes woman-image-opacity {
+  from {
+    margin-top: -200px;
+    opacity: 0;
+  }
+}
+.animate-woman-image {
+  animation: woman-image-opacity 1s;
+}
+
+@keyframes woman-s-cards-from-top {
+  from {
+    opacity: 0;
+    margin-top: -200px;
+  }
+}
+.animate-woman-s-cards {
+  animation: woman-s-cards-from-top 1s;
+}
+
+@keyframes woman-cards-from-top {
+  from {
+    opacity: 0;
+    margin-top: 400px;
+  }
+}
+.animate-woman-cards {
+  animation: woman-cards-from-top 1s;
+}
+
+@keyframes digital-ball-from-left {
+  from {
+    opacity: 0;
+    margin-left: -200px;
+  }
+}
+.animate-digital-ball {
+  animation: digital-ball-from-left 1s;
+}
+
+@keyframes digital-card-from-left {
+  from {
+    opacity: 0;
+    margin-left: -200px;
+  }
+}
+.animate-digital-card {
+  animation: digital-card-from-left 1s;
+}
+
+@keyframes digital-wheel-from-bottom {
+  from {
+    opacity: 0;
+    margin-bottom: -200px;
+  }
+}
+.animate-digital-wheel {
+  animation: digital-wheel-from-bottom 1s;
+}
+
+@keyframes digital-cube-scale {
+  from {
+    opacity: 0;
+    scale: 1.3;
+  }
+}
+.animate-digital-cube {
+  animation: digital-cube-scale 1s;
+}
+
+@keyframes digital-wave-from-right {
+  from {
+    opacity: 0;
+    scale: 1.2;
+    margin-right: -200px;
+  }
+}
+.animate-digital-wave {
+  animation: digital-wave-from-right 1s;
+}
+
+@keyframes digital-pipe-rotate {
+  from {
+    opacity: 0;
+    rotate: 180deg;
+  }
+}
+.animate-digital-pipe {
+  animation: digital-pipe-rotate 1s;
+}
+
+@keyframes whatWeDo-ball {
+  from {
+    opacity: 0;
+    scale: 1.5;
+    margin-left: -300px;
+  }
+}
+.animate-whatWeDo-ball {
+  animation: whatWeDo-ball 1s;
+}
+
+@keyframes whatWeDo-card {
+  from {
+    opacity: 0;
+    margin-right: -300px;
+  }
+}
+.animate-whatWeDo-card {
+  animation: whatWeDo-card 1s;
+}
+
+@keyframes whatWeDo-cube {
+  from {
+    opacity: 0;
+    rotate: -200deg;
+    margin-left: -300px;
+  }
+}
+.animate-whatWeDo-cube {
+  animation: whatWeDo-cube 1s;
+}
+
+@keyframes whatWeDo-wave {
+  from {
+    opacity: 0;
+    margin-top: 100px;
+  }
+}
+.animate-whatWeDo-wave {
+  animation: whatWeDo-wave 1s;
+}
+
+@keyframes team-text {
+  from {
+    opacity: 0;
+    scale: 0.5;
+    margin-right: -100px;
+  }
+}
+.animate-team-info {
+  animation: team-text 1s;
+}
+
+@keyframes team-title {
+  from {
+    opacity: 0;
+    margin-top: -150px;
+    margin-left: -150px;
+  }
+}
+.animate-team-title {
+  animation: team-title 1s;
+}
+
+@keyframes form-pottle {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+}
+.animate-form-pottle {
+  animation: form-pottle 1s;
+}
+
+.animate-form-ball {
+  animation: form-pottle 1s;
+}
+
+@keyframes form-wheel {
+  from {
+    opacity: 0;
+    margin-top: 200px;
+  }
+}
+.animate-form-wheel {
+  animation: form-wheel 1s;
+}
+
+@keyframes form-pipe {
+  from {
+    opacity: 0;
+    margin-left: -100px;
+  }
+}
+.animate-form-pipe {
+  animation: form-pipe 1s;
+}
+
+@keyframes form-pipe2 {
+  from {
+    opacity: 0;
+    rotate: -30deg;
+  }
+}
+.animate-form-pipe2 {
+  animation: form-pipe2 1s;
+}
+
+@keyframes form-wave {
+  from {
+    opacity: 0;
+    margin-left: -100px;
+  }
+}
+.animate-form-wave {
+  animation: form-wave 1s;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -71,6 +355,12 @@
 .home__images__first-two img {
   width: 150px;
 }
+.home__images__first-two div:first-child {
+  animation: home-wave-from-left 1s;
+}
+.home__images__first-two div:last-child img {
+  animation: home-ball-from-right 1s;
+}
 .home__images__second-two {
   display: flex;
   justify-content: space-between;
@@ -82,12 +372,16 @@
   width: 150px;
   z-index: 1;
 }
+.home__images__second-two img:first-child {
+  animation: home-pipe-from-left 1s;
+}
 .home__images__second-two img:last-child {
-  z-index: 0;
   left: -45px;
+  animation: home-wheel-from-right 1s;
 }
 .home__container {
   color: #fff;
+  animation: home-container-scale 1s;
 }
 .home__container h1 {
   width: 80%;
@@ -188,6 +482,7 @@
     margin-right: 20px;
   }
   .business__wrapper__cards__item__text p {
+    width: 340px;
     font-size: 18px;
   }
 }
@@ -281,6 +576,10 @@
     top: -30px;
     display: flex;
     gap: 20px;
+    height: 360px;
+  }
+  .woman__wrapper__cards__item {
+    height: 320px;
   }
 }
 .digital {
@@ -540,7 +839,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .team__wrapper__container__info {
+    width: 506px;
+  }
   .team__wrapper__container__title {
+    width: 505px;
+    height: 291px;
     margin-bottom: 0;
   }
   .team__wrapper__container__title h1 {

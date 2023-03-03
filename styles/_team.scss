@@ -45,7 +45,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
 
+        &__info {
+          width: 506px;
+        }
+
         &__title {
+          width: 505px;
+          height: 291px;
           margin-bottom: 0;
 
           h1 {
