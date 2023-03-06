@@ -94,6 +94,7 @@
   .form {
     &__wrapper {
       @include no-sides;
+      overflow-y: hidden;
 
       &__wheel {
         top: 150px;

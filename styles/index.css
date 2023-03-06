@@ -210,7 +210,10 @@
   from {
     opacity: 0;
     scale: 0.5;
-    margin-right: -100px;
+    left: 100px;
+  }
+  to {
+    inset: 0;
   }
 }
 .animate-team-info {
@@ -220,8 +223,12 @@
 @keyframes team-title {
   from {
     opacity: 0;
-    margin-top: -150px;
-    margin-left: -150px;
+    rotate: 90deg;
+    top: -150px;
+    left: -250px;
+  }
+  to {
+    inset: 0;
   }
 }
 .animate-team-title {
@@ -839,16 +846,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .team__wrapper__container__info {
-    width: 506px;
-  }
   .team__wrapper__container__title {
-    width: 505px;
-    height: 291px;
+    position: relative;
     margin-bottom: 0;
   }
   .team__wrapper__container__title h1 {
     font-size: 50px;
+  }
+  .team__wrapper__container__info {
+    position: relative;
   }
 }
 .form__wrapper {
@@ -940,6 +946,7 @@
   .form__wrapper {
     width: 70%;
     margin: auto;
+    overflow-y: hidden;
   }
   .form__wrapper__wheel {
     top: 150px;

@@ -212,7 +212,10 @@
   from {
     opacity: 0;
     scale: 0.5;
-    margin-right: -100px;
+    left: 100px;
+  }
+  to {
+    inset: 0;
   }
 }
 .animate-team-info {
@@ -222,8 +225,12 @@
 @keyframes team-title {
   from {
     opacity: 0;
-    margin-top: -150px;
-    margin-left: -150px;
+    rotate: 90deg;
+    top: -150px;
+    left: -250px;
+  }
+  to {
+    inset: 0;
   }
 }
 .animate-team-title {
