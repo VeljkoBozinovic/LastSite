@@ -1,14 +1,7 @@
-const elementMenuButton = document
-  .querySelector(".nav__menu__hamburger")
-  .addEventListener("click", () => {
-    elementMenu.classList.remove("hide");
-  });
+const elementMenuButton = document.querySelector(".nav__menu__hamburger");
 const elementMenu = document.querySelector(".menu");
-const elementMenuClose = document
-  .querySelector(".menu__wrapper__close")
-  .addEventListener("click", () => {
-    elementMenu.classList.add("hide");
-  });
+const elementMenuWrapper = document.querySelector(".menu__wrapper");
+const elementMenuClose = document.querySelector(".menu__wrapper__close");
 const elementBusinessSection = document.querySelector(".business");
 const elementBusinessSectionTitle = document.querySelector(".business-title-for-animation");
 const elementBusinessSectionImages = document.querySelectorAll(".business-image-for-animation");
@@ -43,6 +36,18 @@ const elementFormSectionPottle = document.querySelector(".form__wrapper__pottle 
 const elementFormSectionWave = document.querySelector(".form__wrapper__wave");
 const elementFormSectionBall = document.querySelector(".form__wrapper__ball");
 const elementFormSectionPipe2 = document.querySelector(".form__wrapper__pipe2");
+
+elementMenuButton.addEventListener("click", () => {
+  elementMenu.classList.remove("hide");
+  elementMenu.classList.add("animate-menu-opacity");
+  elementMenuWrapper.classList.add("animate-menu-from-left");
+});
+
+elementMenuClose.addEventListener("click", () => {
+  elementMenu.classList.add("hide");
+  elementMenu.classList.remove("animate-menu-opacity");
+  elementMenuWrapper.classList.remove("animate-menu-from-left");
+});
 
 const observerBusiness = new IntersectionObserver((element) => {
   elementBusinessSectionTitle.classList.toggle("animate-business-title", element[0].isIntersecting);

@@ -1,3 +1,23 @@
+//menu
+@keyframes menu-opacity {
+  from {
+    opacity: 0;
+  }
+}
+.animate-menu-opacity {
+  animation: menu-opacity 1s;
+}
+@keyframes menu-from-left {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+.animate-menu-from-left {
+  animation: menu-from-left 1s;
+}
 //home section
 @keyframes home-wave-from-left {
   from {

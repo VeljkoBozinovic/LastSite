@@ -28,6 +28,7 @@
   background-color: $menuBgColor;
 
   &__wrapper {
+    position: relative;
     width: 250px;
     height: 100%;
     padding: 15px;

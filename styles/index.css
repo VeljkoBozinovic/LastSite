@@ -1,3 +1,24 @@
+@keyframes menu-opacity {
+  from {
+    opacity: 0;
+  }
+}
+.animate-menu-opacity {
+  animation: menu-opacity 1s;
+}
+
+@keyframes menu-from-left {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+.animate-menu-from-left {
+  animation: menu-from-left 1s;
+}
+
 @keyframes home-wave-from-left {
   from {
     scale: 0.4;
@@ -311,9 +332,10 @@
   position: fixed;
   inset: 0;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .menu__wrapper {
+  position: relative;
   width: 250px;
   height: 100%;
   padding: 15px;
